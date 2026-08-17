@@ -22,7 +22,7 @@ in
     neovim
 
     # language runtimes
-    nodejs_20
+    nodejs_22
     python312
 
     # font
