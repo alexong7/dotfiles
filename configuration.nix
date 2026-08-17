@@ -22,10 +22,17 @@
       _HIHideMenuBar = true;  # auto-hide the menu bar
       AppleShowAllExtensions = true;
     };
-    dock.autohide = true;
-    finder.FXPreferredViewStyle = "Nlsv";  # list view by default
-    finder.CreateDesktop = false;          # clean desktop
+    dock = {
+      autohide = true;
+      tilesize = 64;
+      show-recents = false;   # hide recent apps section
+    };
+    finder = {
+      FXPreferredViewStyle = "Nlsv";  # list view by default
+      CreateDesktop = false;          # clean desktop
+    };
     trackpad.Clicking = true;              # tap to click
+    screencapture.location = "~/Documents/Screenshots";
   };
 
   # --- Homebrew (managed declaratively via nix-homebrew) ---
