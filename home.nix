@@ -89,14 +89,10 @@ in
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/settings.json";
   home.file.".claude/CLAUDE.md".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/CLAUDE.md";
-  home.file.".claude/notify.sh" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/notify.sh";
-    executable = true;
-  };
-  home.file.".claude/statusline.sh" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/statusline.sh";
-    executable = true;
-  };
+  home.file.".claude/notify.sh".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/notify.sh";
+  home.file.".claude/statusline.sh".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/statusline.sh";
   home.file.".claude/agents".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/agents";
   home.file.".claude/skills".source =
