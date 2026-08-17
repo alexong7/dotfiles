@@ -1,0 +1,14 @@
+[
+    {
+        "key": "cmd+m",
+        "command": "workbench.action.chat.open"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.action.chat.open"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "-workbench.action.chat.open"
+    }
+]

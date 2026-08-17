@@ -1,0 +1,21 @@
+{
+  "permissions": { "defaultMode": "auto" },
+  "model": "opus[1m]",
+  "hooks": {
+    "Notification": [{
+      "matcher": "",
+      "hooks": [{
+        "type": "command",
+        "command": "~/.claude/notify.sh"
+      }]
+    }]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
+  "effortLevel": "high",
+  "theme": "dark-ansi",
+  "skipWorkflowUsageWarning": true,
+  "skipAutoPermissionPrompt": true
+}
